@@ -10,11 +10,11 @@ const Instructions = ({ show, toggleModal }) => {
           <h3 className="text-3xl font-semibold mx-4 my-6">Instructions</h3>
           <p className="text-black text-lg leading-relaxed relative m-6 flex-auto">
             Move the letters of the slide puzzle around to form the phrase. The
-            phrase will always be two five letter words followed by a four
-            letter word and a blank space in the bottom right corner. Some of
-            the words could be abbreviations. The hint will give you an
-            additional clue if you're stuck. The puzzle will light up green when
-            you're correct. Enjoy!
+            blank space will always be in the bottom right corner. None of the
+            words will spill over on to the next lines. Some of the words could
+            be abbreviations. The hint will give you an additional clue if
+            you're stuck. The puzzle will light up green when you're correct.
+            Enjoy!
           </p>
           <div className="flex items-center justify-center my-3">
             <button

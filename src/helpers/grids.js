@@ -1,39 +1,60 @@
 // Grids to choose from
-// Final grid
 
 const grids = [
   [
     [
-      ["h", "a", "p", "p", "y"],
-      ["h", "a", "p", "p", "y"],
-      ["b", "d", "a", "y", "_"],
+      ["sl", "i", "d", "i", "ng"],
+      ["l", "e", "tt", "er", "s"],
+      ["ar", "o", "u", "nd", "_"],
     ],
-    "Something you hear once a year",
-    "The first two words are the same",
+    "The answer for this one is 'sliding letters around'",
+    "You needed a hint for this one?",
     "Getting started",
     0,
   ],
   [
     [
-      ["c", "l", "i", "m", "b"],
-      ["m", "o", "u", "n", "t"],
-      ["h", "o", "o", "d", "_"],
+      ["h", "a", "p", "p", "y"],
+      ["h", "a", "p", "p", "y"],
+      ["bi", "rt", "h", "day", "_"],
     ],
-    "Instructions to go out and exercise",
-    "This one includes a monument in Oregon",
-    "Take a hike",
+    "Something you hear once a year",
+    "The first two words are the same",
+    "A celebration",
     1,
   ],
   [
     [
-      ["h", "a", "p", "p", "y"],
-      ["h", "a", "p", "p", "y"],
-      ["b", "d", "a", "y", "_"],
+      ["cl", "i", "mb", "i", "ng"],
+      ["m", "o", "u", "n", "t"],
+      ["ev", "er", "es", "t", "_"],
     ],
-    "What",
-    "What",
-    "What",
+    "A difficult feat for mountaineers",
+    "What's the highest mountain in the world?",
+    "Going to new heights",
     2,
+  ],
+  [
+    [
+      ["to", "as", "t", "in", "g"],
+      ["to", "a", "s", "t", "er"],
+      ["str", "u", "de", "ls", "_"],
+    ],
+    "Preparing a popular breakfast item",
+    "You might use a device that pops when it's ready",
+    "Sliding words for breakfast",
+    3,
+  ],
+  [
+    [
+      ["per", "so", "n", "a", "l"],
+      ["pr", "o", "te", "ct", "ive"],
+      ["e", "qu", "ip", "ment", "_"],
+    ],
+    "Things frontline workers wear to stay safe",
+    "PPE",
+    "Fashion trends",
+    4,
   ],
 ];
 

@@ -4,7 +4,7 @@ const Hint = ({ hint, level }) => {
   const [showHint, setShowHint] = useState(false);
   let displayHint = null;
   if (showHint) {
-    displayHint = <h3>{hint}</h3>;
+    displayHint = <h3 className="font-semibold">{hint}</h3>;
   }
 
   useEffect(() => {
