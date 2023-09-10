@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const Hint = (props) => {
+const Hint = ({ hint, level }) => {
   const [showHint, setShowHint] = useState(false);
-  const hint = props.hint;
   let displayHint = null;
   if (showHint) {
     displayHint = <h3>{hint}</h3>;
   }
 
+  useEffect(() => {
+    setShowHint(false);
+  }, [level]);
+
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-row items-center gap-2">
       <button
         onClick={() => {
           setShowHint(true);

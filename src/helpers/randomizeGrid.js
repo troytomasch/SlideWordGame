@@ -1,25 +1,23 @@
 const randomizeGrid = (grid) => {
   let randomOrder = [];
-  for (let i = 0; i < 14; i++) {
-    let random = Math.floor(Math.random() * 14);
+  for (let i = 0; i < 15; i++) {
+    let random = Math.floor(Math.random() * 15);
     while (randomOrder.includes(random)) {
-      random = Math.floor(Math.random() * 14);
+      random = Math.floor(Math.random() * 15);
     }
     randomOrder.push(random);
   }
-  console.log(randomOrder);
 
   let count = 0;
   let newGrid = [[], [], []];
   for (let i of randomOrder) {
-    i++;
     let row = 0;
     let col = 0;
     while (i > 4) {
       row++;
       i -= 5;
     }
-    while (i >= 0) {
+    while (i > 0) {
       col++;
       i--;
     }

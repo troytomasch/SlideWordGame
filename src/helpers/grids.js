@@ -4,28 +4,39 @@
 const grids = [
   [
     [
-      [
-        ["h", "a", "p", "p", "y"],
-        ["h", "a", "p", "p", "y"],
-        ["b", "d", "a", "y", "_"],
-      ],
-      "Something you hear once a year",
-      "The first two words are the same",
+      ["h", "a", "p", "p", "y"],
+      ["h", "a", "p", "p", "y"],
+      ["b", "d", "a", "y", "_"],
     ],
+    "Something you hear once a year",
+    "The first two words are the same",
+    "Getting started",
+    0,
   ],
   [
-    ["a", "b", "c", "d", "e"],
-    ["f", "g", "h", "i", "j"],
-    ["_", "k", "l", "m", "n"],
+    [
+      ["c", "l", "i", "m", "b"],
+      ["m", "o", "u", "n", "t"],
+      ["h", "o", "o", "d", "_"],
+    ],
+    "Instructions to go out and exercise",
+    "This one includes a monument in Oregon",
+    "Take a hike",
+    1,
   ],
   [
-    ["a", "b", "c", "d", "e"],
-    ["f", "g", "h", "i", "j"],
-    ["_", "k", "l", "m", "n"],
-  ],
-  [
-    ["a", "b", "c", "d", "e"],
-    ["f", "g", "h", "i", "j"],
-    ["_", "k", "l", "m", "n"],
+    [
+      ["h", "a", "p", "p", "y"],
+      ["h", "a", "p", "p", "y"],
+      ["b", "d", "a", "y", "_"],
+    ],
+    "What",
+    "What",
+    "What",
+    2,
   ],
 ];
+
+module.exports = {
+  grids,
+};

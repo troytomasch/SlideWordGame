@@ -1,17 +1,12 @@
-const moveTile = (letter, grid) => {
-  let row = 0;
-  let column = 0;
+const moveTile = (letter, grid, row, column) => {
   let blankRow = 0;
   let blankCol = 0;
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[0].length; j++) {
-      if (grid[i][j] === letter) {
-        row = i;
-        column = j;
-      }
       if (grid[i][j] === "_") {
         blankRow = i;
         blankCol = j;
+        break;
       }
     }
   }

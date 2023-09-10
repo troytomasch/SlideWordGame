@@ -1,11 +1,17 @@
-import { randomizeGrid } from "./randomizeGrid";
+const checkGrid = (grid1, grid2) => {
+  for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 5; j++) {
+      if (grid1[i][j] === grid2[i][j]) {
+        continue;
+      } else {
+        return false;
+      }
+    }
+  }
 
-let grid = [
-  ["h", "a", "p", "p", "y"],
-  ["h", "a", "p", "p", "y"],
-  ["b", "d", "a", "y", "_"],
-];
+  return true;
+};
 
-let newGrid = randomizeGrid(grid);
-
-console.log(newGrid);
+module.exports = {
+  checkGrid,
+};
