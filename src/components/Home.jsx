@@ -4,6 +4,7 @@ import Grid from "./Grid";
 import { grids } from "../helpers/grids";
 import Buttons from "./Buttons";
 
+// Main component with all grid and upper text
 const Home = () => {
   const [level, setLevel] = useState(0);
 

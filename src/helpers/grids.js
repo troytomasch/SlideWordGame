@@ -53,8 +53,30 @@ const grids = [
     ],
     "Things frontline workers wear to stay safe",
     "PPE",
-    "Fashion trends",
+    "Trending up",
     4,
+  ],
+  [
+    [
+      ["co", "n", "gr", "at", "s"],
+      ["c", "o", "ll", "eg", "e"],
+      ["gr", "ad", "ua", "te", "_"],
+    ],
+    "What you would say to someone holding a diploma",
+    "Especially someone with a Bachelors, Masters, or PhD",
+    "Proud of you for making it",
+    5,
+  ],
+  [
+    [
+      ["s", "p", "i", "c", "y"],
+      ["br", "ea", "k", "fa", "st"],
+      ["bu", "rr", "i", "to", "_"],
+    ],
+    "Tortilla wrapped goodness in the morning",
+    "Some extra capsaicin in this one",
+    "More words for breakfast",
+    6,
   ],
 ];
 

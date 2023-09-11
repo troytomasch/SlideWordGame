@@ -1,12 +1,48 @@
-const randomizeGrid = (grid) => {
-  let randomOrder = [];
-  for (let i = 0; i < 15; i++) {
-    let random = Math.floor(Math.random() * 15);
-    while (randomOrder.includes(random)) {
-      random = Math.floor(Math.random() * 15);
-    }
-    randomOrder.push(random);
+const isSolvable = (order) => {
+  if (order.length === 0) {
+    return false;
   }
+
+  let inversions = 0;
+  for (let i = 0; i < 15; i++) {
+    if (order[i] === 14) {
+      continue;
+    }
+    if (order[i] > i) {
+      inversions++;
+    }
+  }
+
+  if (inversions === 0) {
+    return false;
+  }
+
+  if (inversions % 2 === 0) {
+    return true;
+  }
+
+  return false;
+};
+
+const getRandomOrder = () => {
+  let randomOrder = [];
+
+  while (!isSolvable(randomOrder)) {
+    randomOrder = [];
+    for (let i = 0; i < 15; i++) {
+      let random = Math.floor(Math.random() * 15);
+      while (randomOrder.includes(random)) {
+        random = Math.floor(Math.random() * 15);
+      }
+      randomOrder.push(random);
+    }
+  }
+
+  return randomOrder;
+};
+
+const randomizeGrid = (grid) => {
+  let randomOrder = getRandomOrder();
 
   let count = 0;
   let newGrid = [[], [], []];
@@ -33,16 +69,6 @@ const randomizeGrid = (grid) => {
 
   return newGrid;
 };
-
-let grid = [
-  ["h", "a", "p", "p", "y"],
-  ["h", "a", "p", "p", "y"],
-  ["b", "d", "a", "y", "_"],
-];
-
-let newGrid = randomizeGrid(grid);
-
-console.log(newGrid);
 
 module.exports = {
   randomizeGrid,

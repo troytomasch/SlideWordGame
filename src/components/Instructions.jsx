@@ -1,3 +1,6 @@
+import React from "react";
+
+// Displays the instructions
 const Instructions = ({ show, toggleModal }) => {
   if (!show) {
     return null;

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+// Shows the hint button and hint
 const Hint = ({ hint, level }) => {
   const [showHint, setShowHint] = useState(false);
   let displayHint = null;

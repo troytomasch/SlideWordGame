@@ -1,11 +1,11 @@
 import React from "react";
 import { grids } from "../helpers/grids";
 
+// Displays the level choices
 const Levels = ({ show, setLevel, toggleModal }) => {
   if (!show) {
     return null;
   }
-  let level = -1;
 
   return (
     <>
@@ -17,7 +17,6 @@ const Levels = ({ show, setLevel, toggleModal }) => {
           </h3>
           <div className="flex flex-wrap flex-row m-4 gap-2">
             {grids.map((grid) => {
-              level++;
               return (
                 <button
                   className="text-black text-md px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none"

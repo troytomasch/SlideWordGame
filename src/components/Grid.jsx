@@ -5,6 +5,7 @@ import { grids } from "../helpers/grids";
 import { randomizeGrid } from "../helpers/randomizeGrid";
 import { checkGrid } from "../helpers/checkGrid";
 
+// Displays the grid of tiles
 const Grid = ({ level }) => {
   let finalGrid = grids[level][0];
   const [grid, setGrid] = useState(randomizeGrid(finalGrid));
@@ -13,7 +14,7 @@ const Grid = ({ level }) => {
   useEffect(() => {
     setGrid(randomizeGrid(finalGrid));
     setCorrect(false);
-  }, [level]);
+  }, [level, finalGrid]);
 
   const updateGrid = (letter, row, column) => {
     if (correct) {

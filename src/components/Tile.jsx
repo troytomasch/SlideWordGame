@@ -1,5 +1,6 @@
 import React from "react";
 
+// Individual tile
 const Tile = ({ letter, update, correct, row, column }) => {
   let background = "bg-white";
 

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Instructions from "./Instructions";
 import Levels from "./Levels";
 
+// Displays instructions and levels buttons
 const Buttons = ({ setLevel }) => {
   const [openLevels, setOpenLevels] = useState(false);
   const [openInstructions, setOpenInstructions] = useState(false);
