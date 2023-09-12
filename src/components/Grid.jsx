@@ -34,7 +34,7 @@ const Grid = ({ level }) => {
   let column = -1;
 
   return (
-    <div className="flex flex-row flex-wrap justify-between xl:w-2/3 w-11/12 xl:gap-3 gap-1 m-8 bg-slate-400 rounded-md xl:p-4">
+    <div className="flex flex-row flex-wrap justify-between xl:w-2/3 w-11/12 xl:gap-3 gap-0.5 m-8 bg-slate-400 rounded-md xl:p-4">
       {grid[0].map((letter) => {
         column++;
         return (
