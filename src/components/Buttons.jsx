@@ -9,12 +9,12 @@ const Buttons = ({ setLevel }) => {
 
   return (
     <div>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row lg:gap-4">
         <button
           onClick={() => {
             setOpenInstructions((current) => !current);
           }}
-          className="border-2 border-black rounded-md p-1 m-2"
+          className="border-2 border-white rounded-md p-2 m-2 text-cyan-200 text-xl bg-slate-700"
         >
           Instructions
         </button>
@@ -22,7 +22,7 @@ const Buttons = ({ setLevel }) => {
           onClick={() => {
             setOpenLevels((current) => !current);
           }}
-          className="border-2 border-black rounded-md p-1 m-2"
+          className="border-2 border-white rounded-md p-2 m-2 text-cyan-200 text-xl bg-slate-700"
         >
           Levels
         </button>

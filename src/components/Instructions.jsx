@@ -9,9 +9,11 @@ const Instructions = ({ show, toggleModal }) => {
   return (
     <>
       <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-        <div className="relative w-auto my-6 mx-auto max-w-3xl bg-white border-2 rounded-lg shadow-lg">
-          <h3 className="text-3xl font-semibold mx-4 my-6">Instructions</h3>
-          <p className="text-black text-lg leading-relaxed relative m-6 flex-auto">
+        <div className="relative w-auto my-6 mx-auto max-w-3xl bg-slate-400 border-2 rounded-lg shadow-lg">
+          <h3 className="text-3xl font-semibold mx-4 my-6 text-white">
+            Instructions
+          </h3>
+          <p className="text-white text-lg leading-relaxed relative m-6 flex-auto">
             Move the letters of the slide puzzle around to form the phrase. The
             blank space will always be in the bottom right corner. None of the
             words will spill over on to the next lines. Some of the words could
@@ -21,7 +23,7 @@ const Instructions = ({ show, toggleModal }) => {
           </p>
           <div className="flex items-center justify-center my-3">
             <button
-              className="text-black text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none"
+              className="text-black bg-white text-md px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none"
               type="button"
               onClick={() => toggleModal(false)}
             >
@@ -30,7 +32,7 @@ const Instructions = ({ show, toggleModal }) => {
           </div>
         </div>
       </div>
-      <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+      <div className="opacity-75 fixed inset-0 bg-black"></div>
     </>
   );
 };
