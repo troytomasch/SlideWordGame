@@ -62,6 +62,4 @@ const moveTile = (letter, grid, row, column) => {
   return grid;
 };
 
-module.exports = {
-  moveTile,
-};
+export { moveTile };

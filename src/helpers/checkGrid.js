@@ -12,6 +12,4 @@ const checkGrid = (grid1, grid2) => {
   return true;
 };
 
-module.exports = {
-  checkGrid,
-};
+export { checkGrid };

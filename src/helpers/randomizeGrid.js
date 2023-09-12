@@ -70,6 +70,4 @@ const randomizeGrid = (grid) => {
   return newGrid;
 };
 
-module.exports = {
-  randomizeGrid,
-};
+export { randomizeGrid };

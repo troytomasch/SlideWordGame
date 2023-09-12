@@ -80,6 +80,4 @@ const grids = [
   ],
 ];
 
-module.exports = {
-  grids,
-};
+export { grids };
